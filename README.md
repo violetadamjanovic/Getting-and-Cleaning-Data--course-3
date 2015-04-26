@@ -1,12 +1,14 @@
 # Getting-and-Cleaning-Data--course-3
 
 Description of work -----------------------------------------------------------------------------------------------------
+
 The datasets used in this course project are downloaded from: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 A full description of the problem to be solved is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphone
 
 run_analysis.R contains the code performing the following steps: ---------------------------------------------------------
+
 STEP 1: The script merges train and test data thorugh three iterations: 
  - firstly, it merges "X_train.txt" and "X_test.txt" into "merged_X" data set (10299 x 561 data set); 
  - secondly it merges "Y_train.txt" and "Y_test.txt" into "merged_Y" data set (10299 x 1 data set), and 
