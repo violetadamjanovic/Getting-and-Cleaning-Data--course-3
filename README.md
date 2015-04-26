@@ -18,7 +18,7 @@ STEP 2. The script extracts only those measurements showing the mean and standar
 
 STEP 3. The script adds the descriptive activity names to name the activities in the data set. Activity names are given in "activity_labels.txt" data set. Firstly, we're reading activity_labels.txt into a temporary variable called tmp_activities (6 x 2 data set), then replacing all "_" from all matches with " ", and setting the descriptive variable names by using the names() function. 
 
-STEP 4. The script labels the data set with descriptive variable names. It works with merged_subject temporary data set, and adds "subject" as the name. 
+STEP 4. The script labels the data set with descriptive variable names. It works with merged_subject temporary data set, and adds "subject" as the name.  
 
 STEP 5. From the data set in step 4, the script now creates a new tidy data set that contains only the average of each variable for each activity and each subject. Firstly, we created "tidy_data_course project_step 4.txt" (based on STEP 4) (10299 x 68 data set), which merges all three datasets: merged_subject, merged_Y, merged_X, and we wrote "tidy_data_course project_step 4.txt" by using write.table() function. Then, we calculated the average of each variable for each activity and each subject. This is done by using a FOR loop which is controled based on the length of activities, subjects and variables from tidy_ds (STEP 4). During the FOR loop, the "final" data set is getting built, plus it calculates means (averages) for each variable. Finally, we write table called "tidy_data_course project_step 5.txt", based on "final" dataset. We're using row.name=FALSE for writing the table, as suggested in the decsription of the problem. 
 
